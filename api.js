@@ -4,6 +4,7 @@ var userName = document.getElementById("user-name"),
     userNumber = document.getElementById("user-number"), 
     resultsDiv = document.getElementById("results");
 
+//Pulls data from API after user has typed input into the numbers box
 userNumber.addEventListener("input", getNumberFact);
 
 function getNumberFact(){
@@ -34,8 +35,15 @@ var clearTextBoxes = function clearTextBoxes(){
     userNumber.value = "";
 };
 
+userName.addEventListener("input", function(){
+    if(userName.value != "") {
+        resultsDiv.innerHTML = "";
+    }
+});
+
 // NOTE / TO DO:
 // Text boxes are clearning too quickly and makes it diffiult to type two - three digit numbers
 // style
 //add additional functionalily, maybe JS animation?
 //clear results dive after mouse focus in name textbox
+//use strict    
