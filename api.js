@@ -17,7 +17,7 @@ xhr.open("GET", "http://numbersapi.com/"+ visitorNumber +"/trivia");
     
     //AJAX call back function  
     xhr.onreadystatechange = function(){
-        if (this.readyState == 4 && this.status == 200) {
+        if (xhr.readyState == 4 && xhr.status == 200) {
             var apiQueryResults = xhr.responseText;
             resultsDiv.innerHTML = "Hey " + visitorName.toUpperCase() + ", <strong>" + apiQueryResults + "</strong>";
         };
@@ -33,3 +33,9 @@ var clearTextBoxes = function clearTextBoxes(){
     userName.value = "";
     userNumber.value = "";
 };
+
+// NOTE / TO DO:
+// Text boxes are clearning too quickly and makes it diffiult to type two - three digit numbers
+// style
+//add additional functionalily, maybe JS animation?
+//clear results dive after mouse focus in name textbox
