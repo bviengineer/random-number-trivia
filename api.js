@@ -2,7 +2,8 @@
 // "use-strict"
 var userName = document.getElementById("user-name"),
     userNumber = document.getElementById("user-number"), 
-    resultsDiv = document.getElementById("results");
+    resultsDiv = document.getElementById("results"),
+    startOverBtn = document.getElementById("clear-txtboxes-btn");
 
 //Pulls data from API after user has typed input into the numbers box
 userNumber.addEventListener("input", getNumberFact);
@@ -21,9 +22,7 @@ xhr.open("GET", "http://numbersapi.com/"+ visitorNumber +"/trivia");
         if (xhr.readyState == 4 && xhr.status == 200) {
             var apiQueryResults = xhr.responseText;
             resultsDiv.innerHTML = "Hey " + visitorName.toUpperCase() + ", <strong>" + apiQueryResults + "</strong>";
-        };
-        clearTextBoxes();
-                   
+        };      
     }; //closing curly brace for xhr.onreadstatechange (call back) function
 
     xhr.send();
@@ -33,12 +32,11 @@ xhr.open("GET", "http://numbersapi.com/"+ visitorNumber +"/trivia");
 var clearTextBoxes = function clearTextBoxes(){
     userName.value = "";
     userNumber.value = "";
+    resultsDiv.innerHTML = "";
 };
 
-userName.addEventListener("input", function(){
-    if(userName.value != "") {
-        resultsDiv.innerHTML = "";
-    }
+startOverBtn.addEventListener("click", function(){
+    clearTextBoxes();
 });
 
 // NOTE / TO DO:
