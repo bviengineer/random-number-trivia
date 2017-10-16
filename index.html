@@ -8,28 +8,50 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
     </head>
-    <div class="container-fluid">
-        <body>
-        <main>
-            <section>
-                <h1>Random Number Trivia</h1>        
-                <p>This App Demonstrates the use of AJAX to reference the <a href="http://numbersapi.com/#42" target="_blank">Numbers API</a>.  So, let's get started...</p>
-            </section>
+    <body>
+        <div class="container">
+            <main>
+                <div class="row">         
+                <section class="col-md-12 trivia-heading">
+                    <h1>Random Number Trivia</h1>
+                    <div id="decrotive-div">
+                        <p>This App Demonstrates the use of AJAX to reference the <a href="http://numbersapi.com/#42" target="_blank">Numbers API</a>.  So, let's get started...</p>
+                    </div>        
+                    
+                </section>
+                </div>
+            
+                <div class="row">
+                    <div class="col-md-2"></div> <!--as a space holder -->
+                
+                    <section class="col-md-4">
+                        <h4>What's your name?</h4>
+                        <input type="text" id="user-name" placeholder="Your name...">
+                    </section>
+                    
+                    <section class="col-md-4">
+                        <h4>And, a random number?</h4>
+                        <input type="number" id="user-number" placeholder="Your number...">
+                    </section>
 
-            <section>
-                <h2>What's your name?</h2>
-                <input type="text" id="user-name" placeholder="Your name...">
-            </section>
+                    <div class="col-md-2"></div> <!--as a space holder -->
+                </div>
+                
+                <div class="row">
+                    <div id="results" class="col-md-12">
+                        <!-- API results will be inserted here -->
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-5"></div> <!--as a space holder -->
 
-            <section>
-                <h2>And, a random number?</h2>
-                <p>Hint: any whole number 0 or greater</p>
-                <input type="number" id="user-number" placeholder="Your number...">
-                <div id="results"></div>
-            </section>
-            <button type="submit" id="clear-txtboxes-btn">Start Over</button>
-        </main>
-        <script src="/js/api.js"></script>
-        </body>
-    </div>
+                    <button type="submit" id="clear-txtboxes-btn" class="col-md-2 btn btn-dark">Start Over</button>
+                    
+                    <div class="col-md-5"></div> <!--as a space holder -->
+                </div>
+            </main>
+            <script src="/js/api.js"></script>
+        </div>
+    </body>
 </html>

@@ -1,3 +1,14 @@
 body {
-    background: palevioletred;
+    background: #210126;
+    padding-top: 2rem;
+    color: white;
+}
+
+.trivia-heading {
+    text-align: center;
+}
+
+#decrotive-div {
+    background-color: palevioletred;
+    color: greenyellow; 
 }
