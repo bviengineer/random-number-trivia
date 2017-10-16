@@ -1,7 +1,7 @@
 body {
     background: #210126;
     padding-top: 1.5rem;
-    color: lightcoral;
+    color: #9d0439;
 }
 
 #featured-project-content {
@@ -26,4 +26,13 @@ body {
 #results-div {
     text-align: center;
     font-size: 1.8rem;
+}
+
+.card-header {
+    background-color: rgb(136, 5, 57);
+    color: greenyellow;
+}
+
+.card-text {
+    font-size: 1.3rem;
 }
