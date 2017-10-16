@@ -44,3 +44,20 @@ body {
 .card-title, .trivia-questions {
     color: rgb(96, 151, 8);
 }
+
+footer {
+    color: rgb(96, 151, 8);
+    text-align: center;
+   padding-top: 2rem;
+    font-weight: bold;
+}
+
+div li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.above-feature-img {
+    background-color: white;
+}
