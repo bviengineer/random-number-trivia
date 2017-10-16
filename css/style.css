@@ -1,16 +1,11 @@
 body {
     background: #210126;
     padding-top: 2rem;
-    color: white;
+    color: lightcoral;
 }
 
-.trivia-heading {
+#featured-project-content {
     text-align: center;
-}
-
-#decrotive-div {
-    background-color: palevioletred;
-    color: greenyellow; 
 }
 
 .row {

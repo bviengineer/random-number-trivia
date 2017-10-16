@@ -12,45 +12,28 @@
         <div class="container">
             <main>
                 <div class="row">         
-                <section class="col-md-12 trivia-heading">
-                    <h1>Random Number Trivia</h1>
-                    <div id="decrotive-div">
-                        <p>This App Demonstrates the use of AJAX to reference the <a href="http://numbersapi.com/#42" target="_blank">Numbers API</a>.  So, let's get started...</p>
-                    </div>        
-                    
-                </section>
-                </div>
-            
-                <div class="row">
-                    <div class="col-md-2"></div> <!--as a space holder -->
-                
-                    <section class="col-md-4">
-                        <h4>What's your name?</h4>
-                        <input type="text" id="user-name" placeholder="Your name...">
+                    <section class="col-md-12">
+                        <div class="card">
+                            <h1 class="card-header">Featured Project</h1>
+                            <div id="featured-project-content" class="card-body">
+                                <h2 class="card-title">Random Number Trivia</h2>
+                                <p class="card-text">This App Demonstrates the use of AJAX to reference the <a href="http://numbersapi.com/#42" target="_blank">Numbers API</a>.  So, let's get started...</p>
+                                <h4>What's your name?</h4>
+                                <div><input type="text" id="user-name" placeholder="Your name..."></div>
+                                <h4>And, a random number?</h4>
+                                <div></dov><input type="number" id="user-number" placeholder="Your number..."></div>
+                                <p><button type="submit" id="clear-txtboxes-btn" class="btn btn-dark">Start Over</button></p>
+                            </div>
+                        </div>                        
                     </section>
-                    
-                    <section class="col-md-4">
-                        <h4>And, a random number?</h4>
-                        <input type="number" id="user-number" placeholder="Your number...">
-                    </section>
-
-                    <div class="col-md-2"></div> <!--as a space holder -->
                 </div>
-                
                 <div class="row">
                     <div id="results" class="col-md-12">
                         <!-- API results will be inserted here -->
                     </div>
                 </div>
     
-                <div class="row">
-                    <div class="col-md-5"></div> <!--as a space holder -->
-
-                    <button type="submit" id="clear-txtboxes-btn" class="col-md-2 btn btn-dark">Start Over</button>
-                    
-                    <div class="col-md-5"></div> <!--as a space holder -->
-                </div>
-
+            
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
