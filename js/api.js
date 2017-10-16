@@ -4,7 +4,7 @@
 
 var userName = document.getElementById("user-name"),
     userNumber = document.getElementById("user-number"), 
-    resultsDiv = document.getElementById("results"),
+    resultsDiv = document.getElementById("results-div"),
     startOverBtn = document.getElementById("clear-txtboxes-btn");
 
 //Pulls data from API after user has typed input into the numbers box
