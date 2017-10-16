@@ -1,5 +1,7 @@
-// alert("yep, I'm connected");
-// "use-strict"
+"use-strict"
+
+//add IFFE
+
 var userName = document.getElementById("user-name"),
     userNumber = document.getElementById("user-number"), 
     resultsDiv = document.getElementById("results"),
@@ -24,9 +26,7 @@ xhr.open("GET", "http://numbersapi.com/"+ visitorNumber +"/trivia");
             resultsDiv.innerHTML = "Hey " + visitorName.toUpperCase() + ", <strong>" + apiQueryResults + "</strong>";
         };      
     }; //closing curly brace for xhr.onreadstatechange (call back) function
-
     xhr.send();
-
 }; //closing curly brace for getNumberFact function
 
 var clearTextBoxes = function clearTextBoxes(){
@@ -43,5 +43,4 @@ startOverBtn.addEventListener("click", function(){
 // Text boxes are clearning too quickly and makes it diffiult to type two - three digit numbers
 // style
 //add additional functionalily, maybe JS animation?
-//clear results dive after mouse focus in name textbox
 //use strict    

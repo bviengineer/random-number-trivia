@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Random Number Trivia</title>
-</head>
-<body>
-    <main>
-        <section>
-            <h1>Random Number Trivia</h1>        
-            <p>This App Demonstrates the use of AJAX to reference the <a href="http://numbersapi.com/#42" target="_blank">Numbers API</a>.  So, let's get started...</p>
-        </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Random Number Trivia</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <div class="container-fluid">
+        <body>
+        <main>
+            <section>
+                <h1>Random Number Trivia</h1>        
+                <p>This App Demonstrates the use of AJAX to reference the <a href="http://numbersapi.com/#42" target="_blank">Numbers API</a>.  So, let's get started...</p>
+            </section>
 
-        <section>
-            <h2>What's your name?</h2>
-            <input type="text" id="user-name" placeholder="Your name...">
-        </section>
+            <section>
+                <h2>What's your name?</h2>
+                <input type="text" id="user-name" placeholder="Your name...">
+            </section>
 
-        <section>
-            <h2>And, a random number?</h2>
-            <p>Hint: any whole number 0 or greater</p>
-            <input type="number" id="user-number" placeholder="Your number...">
-            <div id="results"></div>
-        </section>
-        <button type="submit" id="clear-txtboxes-btn">Start Over</button>
-    </main>
-    <script src="api.js"></script>
-</body>
+            <section>
+                <h2>And, a random number?</h2>
+                <p>Hint: any whole number 0 or greater</p>
+                <input type="number" id="user-number" placeholder="Your number...">
+                <div id="results"></div>
+            </section>
+            <button type="submit" id="clear-txtboxes-btn">Start Over</button>
+        </main>
+        <script src="/js/api.js"></script>
+        </body>
+    </div>
 </html>
