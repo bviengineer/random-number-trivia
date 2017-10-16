@@ -1,6 +1,6 @@
 body {
     background: #210126;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     color: lightcoral;
 }
 
@@ -16,7 +16,7 @@ body {
     margin-bottom: 2rem;    
     padding: 0.5rem;     
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 #clear-txtboxes-btn {
